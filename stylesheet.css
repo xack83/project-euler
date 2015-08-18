@@ -31,15 +31,16 @@ body {
 }
 
 .problem {
-	display: inline-block;
-	background-color: #fff;
+	position: relative;
+	float: left;
 	width: 30%; height: 400px;
+	background-color: #fff;
 	margin-left: 20px;
 	margin-top: 20px;
+	text-align: center;
 	border: 1px solid #eee;
 	box-shadow: 3px 3px 3px #ddd;
 	border-radius: 2px;
-	text-align: center;
 }
 
 .enunciado {
@@ -48,32 +49,58 @@ body {
 	font-family: Verdana, sans;
 	font-size: 12px;
 	text-align: center;
-	padding: 20px 20px 20px 20px;
+	padding: 10px 20px 20px 20px;
 	display: table-cell;
 }
 
-.buttonCalc {
+input[type="text"] {
 	position: relative;
-	width: 50%;
+	height: 27px; width: 160px;
+	margin-left: 38px;
+	padding-left: 5px;
+	border-radius: 5%;
+	border: 1px solid #ccc;
+	outline: none;
+	font-family: Arial, sans;
+	font-size: 20px;
+	font-weight: bolder;
+	color: #f17238;
+}
+
+input[type="button"] {
+	position: relative;
+	height: 30px; width: 130px;
+	margin-left: 10px;
 	background-color: #f17238;
 	border-radius: 5%;
-	font-size: 25px;
+	border: none;
+    outline: none;
+	font-size: 20px;
 	font-weight: bolder;
 	color: white;
-   	height: 40px;
-   	vertical-align: middle;
-   	margin-right: 20px;
-   	padding: 0px 20px 0px 20px;
+	cursor: hand;
 }
 
 .result {
 	position: relative;
+	float: center;
+	height: 40px;
+	margin-top: 20px;
 	border-radius: 5%;
 	font-size: 50px;
 	font-weight: bolder;
-   	float: center;
-   	height: 40px;
-   	vertical-align: middle;
-   	margin-right: 20px;
-   	padding: 0px 20px 0px 20px;
+}
+
+#note {
+	font-style: italic;
+	font-size: 11px;
+	color: #888;
+}
+
+.pheader {
+	margin: 0 auto;
+	font-size: 30px;
+	font-weight: bolder;
+	border-bottom: 1px dashed #aaa;
+	padding: 20px 0px 20px 0px;
 }
